@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font: size 14px;
+    :
+}
+
+.container {
+    width: 100%;
+}
+
+.box {
+    width: 30%;
+    height: 220px;
+    background-color: rgb(145, 145, 145);
+    border: 3px solid black;
+    margin: 10px;
+    float: left;
+    margin-left: 41px;
+    margin-right: auto;
+
+}
+
+.box h2 {
+    text-align: center;
+    background-color: crimson;
+    border: 3px solid black;
+    padding: 3px;
+    margin-left: 300px;     
+    border-top: none;
+    border-right: none;
+}
+
+#box1 h2 {
+    background-color: rgb(208, 145, 160);
+}
+
+#box2 h2 {
+    background-color: rgb(168, 67, 78);
+    color: aliceblue;
+}
+
+#box3 h2 {
+    background-color: rgb(212, 197, 99);
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #box1 {
+        width: 50%;
+    }
+
+    #box2 {
+        width: 50%;
+    }
+
+    #box3 {
+        width: 100%;
+        
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
